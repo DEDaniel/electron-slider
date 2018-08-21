@@ -1,0 +1,24 @@
+{
+  "name": "electron-slider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DEDaniel/electron-slider.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DEDaniel/electron-slider/issues"
+  },
+  "homepage": "https://github.com/DEDaniel/electron-slider#readme",
+  "devDependencies": {
+    "electron": "^2.0.7"
+  }
+}
