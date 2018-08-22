@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,86 @@
     <link rel="stylesheet" href="css/content.css">
     <title>Electron Slider</title>
 </head>
+
 <body>
+
+    <script src="lib/jssor.slider-27.4.0.min.js"></script>
+    <script src="js/slider.js"></script>
+
     <div class="app">
         <div class="content">
-            <h1>Electron Slider</h1>
+            <!-- slider -->
+            <div style="position:relative;top:0;left:0;width:100%;height:100%;overflow:hidden;">
+                <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1366px;height:768px;overflow:hidden;visibility:hidden;">
+                    <!-- Loading Screen -->
+                    <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                        <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+                    </div>
+                    <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1366px;height:768px;overflow:hidden;">
+                        <div data-p="267">
+                            <img data-u="image" src="img/001.jpg" />
+                            <div style="position:absolute;top:210px;left:380px;width:300px;height:250px;font-size:16px;color:#ffffff;line-height:1.88;text-align:left;padding:10px 10px 10px 10px;box-sizing:border-box;background-color:rgba(255,188,5,0.8);background-clip:padding-box;">
+                                Layout Settings <br /><br /> Slider Size: 1366 x 768<br /> Scale To: Full Window (Flex Mode)
+                                <br /> Max Width: 3000<br /> Max Height: 3000<br /> Bleeding: 100%
+                            </div>
+                        </div>
+                        <div data-p="267">
+                            <img data-u="image" src="img/002.jpg" />
+                        </div>
+                        <div data-p="267">
+                            <img data-u="image" src="img/003.jpg" />
+                        </div>
+                        <div data-p="267">
+                            <img data-u="image" src="img/004.jpg" />
+                        </div>
+                        <div data-p="267">
+                            <img data-u="image" src="img/005.jpg" />
+                        </div>
+                        <div data-p="267">
+                            <img data-u="image" src="img/006.jpg" />
+                        </div>
+                        <div data-p="267">
+                            <img data-u="image" src="img/007.jpg" />
+                        </div>
+                        <div data-p="267">
+                            <img data-u="image" src="img/008.jpg" />
+                        </div>
+                        <div data-p="267">
+                            <img data-u="image" src="img/009.jpeg" />
+                        </div>
+                    </div>
+                    <!-- Bullet Navigator -->
+                    <div data-u="navigator" class="jssorb064" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5"
+                        data-scale-bottom="0.75">
+                        <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                                <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Arrow Navigator -->
+                    <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75"
+                        data-scale-left="0.75">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                            <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                        </svg>
+                    </div>
+                    <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75"
+                        data-scale-right="0.75">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                            <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <!-- slider end -->
+
         </div>
-        
-
-
-
-
     </div>
+    <script type="text/javascript">
+        initSlider();
+    </script>
+    <script src="js/common.js"></script>
 </body>
+
 </html>

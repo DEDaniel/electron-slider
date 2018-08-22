@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/main.js",
   "scripts": {
-    "start": "electron .",
+    "start": "electron . --enable-logging",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +20,8 @@
   "homepage": "https://github.com/DEDaniel/electron-slider#readme",
   "devDependencies": {
     "electron": "^2.0.7"
+  },
+  "dependencies": {
+    "lodash.debounce": "^4.0.8"
   }
 }
